@@ -1,4 +1,4 @@
-window.document.body.addEventListener('load',testing);
+
 
 function testing()
 {
