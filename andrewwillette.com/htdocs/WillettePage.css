@@ -20,6 +20,7 @@
     background-size:2rem;
     height:2rem;
     width:2rem;
+    margin:5px;
 }
 #playlist li a{
 	visibility:hidden;
@@ -31,6 +32,7 @@
   background-position: center;
   background-size:2rem;
   /* put the height and width of your image here */
+  background-color:white;
   height: 2rem;
   width: 2rem;
   border: none;

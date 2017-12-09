@@ -65,6 +65,13 @@ function playNext() {
     }
 }
 
+//space bar pauses music
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        _player.pause();
+    }
+}
+
 // event listeners
 _stop.addEventListener("click", function () {
     _player.pause();
