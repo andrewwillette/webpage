@@ -1,45 +1,7 @@
-window.onload = main();
-
-function testing()
-{
-alert("hello world");
-}
-
-function main(){
-	
-	//insertPlayButtons();
-	
-	//center.appendChild("It's 10:10");
-
-}
-
-function insertPlayButtons(){
-
-	var audioList = document.querySelector("#audioList");
-	var audioItem = audioList.getElementsByTagName("li");
-	var audioSource = audioList.getElementsByTagName("a");
 
 
-	for (var i=0; i < audioSource.length; i++) {
-		
-    	var img = document.createElement('img');
-    	img.src = "Resources/Images/playbutton.png";
-    	img.classList.add("playbutton");
 
-    	var audioClip = document.createElement("AUDIO")
-    	audioClip.src=audioSource[i].getAttribute("data-value");
-    	img.onclick = function() {
-    		audioClip.play();
-    		console.log("testing");
-    	}
-    	audioItem[i].appendChild(img);
- 
-    	
-    	
-    	
-    	
-	}
-}
+
 
 // globals
 var _player = document.getElementById("player"),
@@ -55,6 +17,7 @@ function playlistItemClick(clickedElement) {
     clickedElement.classList.add("selected");
 
     _player.src = clickedElement.getAttribute("source");
+    console.log(_player.src);
     _player.play();
 }
 
