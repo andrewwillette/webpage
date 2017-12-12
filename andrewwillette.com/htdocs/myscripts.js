@@ -35,6 +35,9 @@ document.body.onkeyup = function(e){
     }
 }
 
+$("#logo").fadeIn(3000);
+
+
 // event listeners
 _stop.addEventListener("click", function () {
     _player.pause();
